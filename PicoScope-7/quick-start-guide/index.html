@@ -22,7 +22,11 @@
     <![endif]-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
       <script>hljs.highlightAll();</script> 
-</head>
+ <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
 
 <body class="wy-body-for-nav" role="document">
 
@@ -31,11 +35,7 @@
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
           <a href="../.." class="icon icon-home"> PicoScope 7 Documentation
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
+        </a>
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
@@ -105,9 +105,9 @@ For more information please contact our tech support team at <a href="mailto:sup
 <li>Go to <a href="https://www.picotech.com/downloads">https://www.picotech.com/downloads</a>.</li>
 <li>Select your <strong>series</strong> and <strong>device</strong> from the lists provided.</li>
 <li>In <strong>Software</strong> download the <strong>stable</strong> (recommended) version of PicoScope 7.
-<img alt="PicoScope 7 download page" src="../img/quickstart/picotech-download-page-6000.png" /></li>
+<a class="glightbox" href="../img/quickstart/picotech-download-page-6000.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PicoScope 7 download page" src="../img/quickstart/picotech-download-page-6000.png" /></a></li>
 <li>Run the installer and PicoScope 7 will be installed on your PC.
-<img alt="PicoScope 7 installer starting" src="../img/quickstart/picoscope-7-installer-start.png" /></li>
+<a class="glightbox" href="../img/quickstart/picoscope-7-installer-start.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PicoScope 7 installer starting" src="../img/quickstart/picoscope-7-installer-start.png" /></a></li>
 </ol>
 <!-- ![PicoScope 7 installer copying files](img/quickstart/picoscope-7-installer-copying.png)
 ![PicoScope 7 installer finishing installer](img/quickstart/picoscope-7-installer-finish.png) -->
@@ -123,13 +123,13 @@ For more information please contact our tech support team at <a href="mailto:sup
 <h2 id="launching-picoscope-7">Launching PicoScope 7</h2>
 <ol>
 <li>Find the PicoScope 7 icon on your desktop or start menu, and click to launch PicoScope 7.
-<img alt="PicoScope 7 start icon" src="../img/quickstart/picoscope-7-start-menu-icon.png" /></li>
+<a class="glightbox" href="../img/quickstart/picoscope-7-start-menu-icon.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PicoScope 7 start icon" src="../img/quickstart/picoscope-7-start-menu-icon.png" /></a></li>
 <li>PicoScope 7 will open and search for a device on start-up.</li>
 <li>If your PicoScope is detected, and it's the only PicoScope plugged in, it will connect and run that PicoScope.</li>
 <li>If there is more than 1 PicoScope attached, you will need to select which PicoScope you are using. 
-<br/><img alt="PicoScope 7 start icon" src="../img/quickstart/picoscope-7-device-selector.png" /></li>
+<br/><a class="glightbox" href="../img/quickstart/picoscope-7-device-selector.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PicoScope 7 start icon" src="../img/quickstart/picoscope-7-device-selector.png" /></a></li>
 <li>Once a PicoScope is connected, the software will now be running.
-<img alt="PicoScope 7 running no signal" src="../img/quickstart/picoscope-7-running-no-signal.png" /></li>
+<a class="glightbox" href="../img/quickstart/picoscope-7-running-no-signal.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="PicoScope 7 running no signal" src="../img/quickstart/picoscope-7-running-no-signal.png" /></a></li>
 </ol>
 <p>To probe and display a signal correcntly click <strong>next</strong>.</p>
               
@@ -171,12 +171,11 @@ For more information please contact our tech support team at <a href="mailto:sup
     <script>var base_url = "../..";</script>
     <script src="../../js/theme_extra.js"></script>
     <script src="../../js/theme.js"></script>
-      <script src="../../search/main.js"></script>
     <script>
         jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
         });
     </script>
 
-</body>
+<script>const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});</script></body>
 </html>
