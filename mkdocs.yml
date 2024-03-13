@@ -1,0 +1,56 @@
+site_name: PicoScope 7 Documentation
+
+theme: 
+  name: readthedocs
+extra_css:
+  - style/style.css # Theme override
+
+copyright: 'Copyright information ©️'
+
+nav:
+  - PicoScope 7: index.md
+  - System requirements: PicoScope-7/system-requirements.md
+  - Quick-start guide: PicoScope-7/quick-start-guide.md
+  - Oscilloscope basics:
+    - Run/Stop oscilloscope: Oscilloscope-basics/run-stop-oscilloscope.md
+    - Voltage: Oscilloscope-basics/voltage-range.md
+    - Channels: Oscilloscope-basics/channels.md
+    - Timebase: Oscilloscope-basics/timebase.md
+    - Trigger: Oscilloscope-basics/trigger.md
+    - Rulers: Oscilloscope-basics/rulers.md
+  - Oscilloscope advanced:
+    - Probe attenuation: Oscilloscope-advanced/probe-attenuation.md
+    - Waveform navigator: Oscilloscope-advanced/waveform-navigator.md
+    - Sampling rate: Oscilloscope-advanced/sampling-rate.md
+  - Instruments: 
+    - Spectrum mode: PicoScope-7/spectrum-mode.md
+    - Persistence mode: PicoScope-7/persistence-mode.md
+    - XY mode: PicoScope-7/xy-mode.md
+    - Signal generator: PicoScope-7/signal-generator.md
+    - Arbitrary waveform generator (AWG): PicoScope-7/arbitrary-waveform-generator-awg.md
+  - PicoScope 7 features and tools:
+    - Automated measurements: PicoScope-7/automated-measurements.md
+    - Math channels: PicoScope-7/math-channels.md
+    - Serial decoding: PicoScope-7/serial-decoding.md
+    - Masks: PicoScope-7/masks.md
+    - Actions: PicoScope-7/actions-alarms.md
+    - Deep measure: PicoScope-7/deep-measure.md
+    - Reference waveforms: PicoScope-7/reference-waveforms.md
+  - Additional controls:
+    - Saving and exporting: PicoScope-7/saving-and-exporting.md
+    - Views: PicoScope-7/views.md
+    - Reset configuration: PicoScope-7/reset-configuration.md
+    - Settings: PicoScope-7/settings-menu.md
+  - Training and Demos:
+    - MSO training and demo board: PicoScope-demo-board/getting-started.md
+  - Reference:
+    - Download: PicoScope-7/manual-download.md
+    - Troubleshooting: PicoScope-7/troubleshooting.md
+    - Glossary: PicoScope-7/glossary.md
+
+plugins: 
+ - glightbox  # https://github.com/blueswen/mkdocs-glightbox
+ - search
+#  - with-pdf:  # https://github.com/orzih/mkdocs-with-pdf (PDF theme override templates/style.scss)
+#     exclude_pages: 
+#       - 'PicoScope-7/manual-download'
